@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JNV Imobiliária — Imóveis em Monte Aprazível/SP</title>
+  <meta name="description" content="Compra, venda, troca, locação e financiamento de imóveis em Monte Aprazível/SP. Encontre casas, apartamentos, terrenos e pontos comerciais em um só lugar." />
+  <meta name="theme-color" content="#0E2A47" />
+  <meta property="og:title" content="JNV Imobiliária — Imóveis em Monte Aprazível/SP" />
+  <meta property="og:description" content="Encontre o imóvel ideal em Monte Aprazível. Compra, venda, troca, locação e financiamento." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230E2A47'/%3E%3Cpath d='M50 22 78 44v34H22V44z' fill='none' stroke='%23C7A24B' stroke-width='6' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#imoveis">Pular para os imóveis</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="JNV Imobiliária — início">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="38" height="38"><rect width="100" height="100" rx="24" fill="var(--navy-800)"/><path d="M50 24 76 45v31H24V45z" fill="none" stroke="var(--gold)" stroke-width="6" stroke-linejoin="round"/><path d="M42 76V60h16v16" fill="none" stroke="var(--gold)" stroke-width="6" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-text">
+          <strong>JNV</strong>
+          <em>Imobiliária</em>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#imoveis">Imóveis</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-wa" id="wa-header" href="#" target="_blank" rel="noopener">
+          <svg class="ico-wa" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9C29 8.3 22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 9.9S21.9 24.7 16 24.7z"/><path d="M22 18.3c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+          Fale no WhatsApp
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Navegação (mobile)">
+      <a href="#imoveis" data-close>Imóveis</a>
+      <a href="#sobre" data-close>Sobre</a>
+      <a href="#contato" data-close>Contato</a>
+    </nav>
+    <a class="btn btn-wa btn-block" id="wa-mobile" href="#" target="_blank" rel="noopener">
+      <svg class="ico-wa" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9C29 8.3 22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 9.9S21.9 24.7 16 24.7z"/><path d="M22 18.3c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+      Fale no WhatsApp
+    </a>
+  </div>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80" alt="" loading="eager" fetchpriority="high" />
+        <div class="hero-scrim"></div>
+      </div>
+      <div class="wrap hero-inner">
+        <div class="hero-copy reveal">
+          <span class="eyebrow eyebrow-light">Imobiliária • Monte Aprazível / SP</span>
+          <h1>Encontre o imóvel ideal em <span class="accent">Monte Aprazível</span></h1>
+          <p>Compra, venda, troca, locação e financiamento com o atendimento de quem conhece cada bairro da cidade. Todos os imóveis reunidos em um só lugar.</p>
+        </div>
+
+        <form class="search-card reveal" id="hero-search" autocomplete="off">
+          <div class="search-grid">
+            <div class="field">
+              <label for="hero-op">Operação</label>
+              <div class="select-wrap">
+                <select id="hero-op" name="op">
+                  <option value="todos">Todas</option>
+                  <option value="venda">Venda</option>
+                  <option value="locacao">Locação</option>
+                  <option value="troca">Troca</option>
+                </select>
+                <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="field">
+              <label for="hero-type">Tipo de imóvel</label>
+              <div class="select-wrap">
+                <select id="hero-type" name="type">
+                  <option value="todos">Todos</option>
+                  <option value="casa">Casa</option>
+                  <option value="apartamento">Apartamento</option>
+                  <option value="terreno">Terreno</option>
+                  <option value="comercial">Comercial</option>
+                  <option value="chacara">Chácara</option>
+                </select>
+                <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="field field-search">
+              <label for="hero-q">Palavra-chave</label>
+              <input type="search" id="hero-q" name="q" placeholder="Bairro, característica…" />
+            </div>
+            <button class="btn btn-primary search-btn" type="submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m20 20-3.2-3.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              Buscar
+            </button>
+          </div>
+        </form>
+
+        <ul class="hero-trust reveal" aria-label="Diferenciais">
+          <li><strong>+ imóveis</strong><span>reunidos num só lugar</span></li>
+          <li><strong>Atendimento local</strong><span>quem conhece a cidade</span></li>
+          <li><strong>Financiamento</strong><span>facilitado com bancos</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Imóveis ===== -->
+    <section class="section" id="imoveis">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Catálogo</span>
+          <h2>Imóveis disponíveis</h2>
+          <p class="section-sub">Filtre por operação e tipo. Gostou de algum? Toque em <strong>“Tenho interesse”</strong> e fale direto no WhatsApp.</p>
+        </div>
+
+        <div class="toolbar reveal" role="group" aria-label="Filtro de imóveis">
+          <div class="chips" id="op-chips" role="tablist" aria-label="Operação">
+            <button class="chip is-active" data-op="todos" role="tab" aria-selected="true">Todos</button>
+            <button class="chip" data-op="venda" role="tab" aria-selected="false">Venda</button>
+            <button class="chip" data-op="locacao" role="tab" aria-selected="false">Locação</button>
+            <button class="chip" data-op="troca" role="tab" aria-selected="false">Troca</button>
+          </div>
+          <div class="toolbar-right">
+            <div class="select-wrap compact">
+              <select id="type-select" aria-label="Tipo de imóvel">
+                <option value="todos">Todos os tipos</option>
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="terreno">Terreno</option>
+                <option value="comercial">Comercial</option>
+                <option value="chacara">Chácara</option>
+              </select>
+              <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+
+        <div class="grid" id="grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <p>Nenhum imóvel encontrado com esse filtro.</p>
+          <button class="btn btn-outline" id="clear-filters" type="button">Limpar filtros</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Sobre ===== -->
+    <section class="section sobre" id="sobre">
+      <div class="wrap sobre-grid">
+        <div class="sobre-media reveal">
+          <div class="bezel">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80" alt="Atendimento de imobiliária com aperto de mãos ao fechar negócio" loading="lazy" />
+          </div>
+        </div>
+        <div class="sobre-copy reveal">
+          <span class="eyebrow">Sobre a imobiliária</span>
+          <h2>Atendimento próximo, do primeiro contato às chaves na mão</h2>
+          <p>A <strong>JNV Imobiliária</strong> atua em Monte Aprazível e região com dedicação a cada etapa do negócio. Reunimos aqui os imóveis que antes só apareciam no Instagram — agora com busca, filtros e contato direto.</p>
+          <ul class="services">
+            <li><span class="dot"></span>Compra</li>
+            <li><span class="dot"></span>Venda</li>
+            <li><span class="dot"></span>Troca</li>
+            <li><span class="dot"></span>Locação</li>
+            <li><span class="dot"></span>Financiamento</li>
+          </ul>
+          <a class="btn btn-primary" id="wa-sobre" href="#" target="_blank" rel="noopener">
+            <svg class="ico-wa" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9C29 8.3 22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 9.9S21.9 24.7 16 24.7z"/><path d="M22 18.3c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+            Falar com um corretor
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA band ===== -->
+    <section class="cta-band">
+      <div class="wrap cta-inner reveal">
+        <h2>Não encontrou o que procurava?</h2>
+        <p>Nos conte o que você precisa. Temos novos imóveis chegando toda semana.</p>
+        <a class="btn btn-gold" id="wa-cta" href="#" target="_blank" rel="noopener">
+          <svg class="ico-wa" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9C29 8.3 22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 9.9S21.9 24.7 16 24.7z"/><path d="M22 18.3c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" id="contato">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" width="38" height="38"><rect width="100" height="100" rx="24" fill="var(--gold)"/><path d="M50 24 76 45v31H24V45z" fill="none" stroke="var(--navy-900)" stroke-width="6" stroke-linejoin="round"/><path d="M42 76V60h16v16" fill="none" stroke="var(--navy-900)" stroke-width="6" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand-text light"><strong>JNV</strong><em>Imobiliária</em></span>
+        </div>
+        <p>Imóveis para compra, venda, troca, locação e financiamento em Monte Aprazível/SP e região.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contato</h3>
+        <a class="footer-link" id="wa-footer" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="mini-ico" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          (17) 99108-2525
+        </a>
+        <a class="footer-link" href="https://instagram.com/jnvimobiliaria_monteaprazivel" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="mini-ico" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+          @jnvimobiliaria_monteaprazivel
+        </a>
+        <p class="footer-loc">
+          <svg viewBox="0 0 24 24" class="mini-ico" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          Monte Aprazível — São Paulo
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Navegue</h3>
+        <a class="footer-link" href="#imoveis">Imóveis</a>
+        <a class="footer-link" href="#sobre">Sobre a imobiliária</a>
+        <a class="footer-link" href="#top">Início</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© <span id="year"></span> JNV Imobiliária. Todos os direitos reservados.</p>
+      <p class="demo-note">Página demonstrativa • imagens ilustrativas de banco de imagens</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-fab" id="wa-fab" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9C29 8.3 22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 9.9S21.9 24.7 16 24.7z"/><path d="M22 18.3c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>

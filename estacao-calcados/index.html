@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estação Calçados — Catálogo | Centro de Mirassol/SP</title>
+  <meta name="description" content="Catálogo de calçados da Estação Calçados, no Centro de Mirassol/SP. Tênis, botas, sandálias, salto e casual. Veja modelos e preços e feche pelo WhatsApp." />
+  <meta name="theme-color" content="#B5623C" />
+  <meta property="og:title" content="Estação Calçados — Catálogo | Mirassol/SP" />
+  <meta property="og:description" content="Seu próximo par começa aqui. Veja o catálogo e compre pelo WhatsApp." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23B5623C'/%3E%3Cpath d='M16 62c0-5 3-7 8-9l14-6 8-13c2-3 6-3 8 0l4 6-8 6 6 6 7-8c7 4 12 8 20 9 4 .5 6 3 6 7v5H16z' fill='none' stroke='%23FBF6EF' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#catalogo">Pular para o catálogo</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Estação Calçados — início">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="40" height="40"><rect width="100" height="100" rx="26" fill="var(--terracotta)"/><path d="M16 62c0-5 3-7 8-9l14-6 8-13c2-3 6-3 8 0l4 6-8 6 6 6 7-8c7 4 12 8 20 9 4 .5 6 3 6 7v5H16z" fill="none" stroke="var(--cream)" stroke-width="5" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-text">
+          <strong>Estação</strong>
+          <em>Calçados · Mirassol</em>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#loja">A loja</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary" id="wa-header" href="#" target="_blank" rel="noopener">
+          <svg class="ico-wa" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9C29 8.3 22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 9.9S21.9 24.7 16 24.7z"/><path d="M22 18.3c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+          Comprar no WhatsApp
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Navegação (mobile)">
+      <a href="#catalogo" data-close>Catálogo</a>
+      <a href="#loja" data-close>A loja</a>
+      <a href="#contato" data-close>Contato</a>
+    </nav>
+    <a class="btn btn-primary btn-block" id="wa-mobile" href="#" target="_blank" rel="noopener">
+      <svg class="ico-wa" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9C29 8.3 22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 9.9S21.9 24.7 16 24.7z"/><path d="M22 18.3c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+      Comprar no WhatsApp
+    </a>
+  </div>
+
+  <main id="top">
+    <!-- ===== Hero (editorial split) ===== -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Loja no Centro de Mirassol / SP</span>
+          <h1>Seu próximo par <span class="accent">começa aqui</span>.</h1>
+          <p>Tênis, botas, sandálias e sapatos selecionados a dedo. Veja os modelos disponíveis, confira os preços e feche direto pelo WhatsApp — ou passe na loja para provar.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogo">
+              Ver catálogo
+              <span class="btn-ico-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+            <a class="btn btn-ghost" id="wa-hero" href="#" target="_blank" rel="noopener">
+              <svg class="ico-wa" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9C29 8.3 22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 9.9S21.9 24.7 16 24.7z"/><path d="M22 18.3c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+              Falar agora
+            </a>
+          </div>
+          <div class="hero-meta">
+            <div><span class="hero-meta-k">Endereço</span><span class="hero-meta-v">Rua 9 de Julho, 1923 · Centro</span></div>
+            <div><span class="hero-meta-k">Seg — Sáb</span><span class="hero-meta-v">Aberto · veja os horários</span></div>
+          </div>
+        </div>
+
+        <div class="hero-media reveal">
+          <div class="hero-photo bezel">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1000&q=80" alt="Par de tênis premium em destaque" loading="eager" fetchpriority="high" />
+          </div>
+          <div class="hero-chip">
+            <span class="hero-chip-dot"></span>
+            Novidades toda semana
+          </div>
+          <div class="hero-badge">
+            <strong>+100</strong>
+            <span>modelos na loja</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Catálogo ===== -->
+    <section class="section" id="catalogo">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Catálogo</span>
+          <h2>Modelos disponíveis</h2>
+          <p class="section-sub">Escolha por categoria. Gostou de um par? Toque em <strong>“Comprar”</strong> e finalize pelo WhatsApp.</p>
+        </div>
+
+        <div class="filter-bar reveal" role="tablist" aria-label="Categorias">
+          <button class="pill is-active" data-cat="todos" role="tab" aria-selected="true">Todos</button>
+          <button class="pill" data-cat="tenis" role="tab" aria-selected="false">Tênis</button>
+          <button class="pill" data-cat="botas" role="tab" aria-selected="false">Botas</button>
+          <button class="pill" data-cat="salto" role="tab" aria-selected="false">Salto</button>
+          <button class="pill" data-cat="sandalias" role="tab" aria-selected="false">Sandálias</button>
+          <button class="pill" data-cat="casual" role="tab" aria-selected="false">Casual</button>
+        </div>
+
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+        <div class="grid" id="grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== A loja ===== -->
+    <section class="section loja" id="loja">
+      <div class="wrap loja-grid">
+        <div class="loja-info reveal">
+          <span class="eyebrow">A loja</span>
+          <h2>Venha provar no Centro de Mirassol</h2>
+          <p>Atendimento de perto, troca fácil e aquele conselho sincero para você levar o par certo. Estamos há alguns passos da praça central.</p>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+              <div><strong>Endereço</strong><p>Rua 9 de Julho, 1923 — Centro, Mirassol/SP</p></div>
+            </li>
+            <li>
+              <span class="info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <div><strong>Horário de funcionamento</strong>
+                <p>Segunda a sexta · 9h às 18h<br/>Sábado · 9h às 13h<br/>Domingo · fechado</p>
+              </div>
+            </li>
+            <li>
+              <span class="info-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"/></svg></span>
+              <div><strong>WhatsApp</strong><p id="loja-wa-num">(17) 9 9999-0000 <span class="tiny">· número ilustrativo</span></p></div>
+            </li>
+          </ul>
+
+          <div class="loja-actions">
+            <a class="btn btn-primary" id="wa-loja" href="#" target="_blank" rel="noopener">
+              <svg class="ico-wa" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9C29 8.3 22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 9.9S21.9 24.7 16 24.7z"/><path d="M22 18.3c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+              Chamar no WhatsApp
+            </a>
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Rua+9+de+Julho+1923+Centro+Mirassol+SP" target="_blank" rel="noopener">
+              Como chegar
+            </a>
+          </div>
+        </div>
+
+        <div class="loja-map reveal" aria-hidden="true">
+          <div class="map-card bezel">
+            <div class="map-face">
+              <div class="map-grid"></div>
+              <div class="map-street map-street-1"></div>
+              <div class="map-street map-street-2"></div>
+              <div class="map-pin">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </div>
+              <div class="map-label">Rua 9 de Julho, 1923 · Centro</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Diferenciais ===== -->
+    <section class="perks">
+      <div class="wrap perks-grid reveal">
+        <div class="perk">
+          <span class="perk-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="13" rx="2.5"/><path d="M2.5 10h19"/></svg></span>
+          <h3>Pagamento facilitado</h3>
+          <p>Cartão, Pix e parcelamento. Combine as condições direto com a loja.</p>
+        </div>
+        <div class="perk">
+          <span class="perk-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 9 18l-5-5"/></svg></span>
+          <h3>Provou, levou</h3>
+          <p>Reserve pelo WhatsApp e retire na loja no mesmo dia. Sem filas.</p>
+        </div>
+        <div class="perk">
+          <span class="perk-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 21l-4.9 2.2.9-5.5-4-3.9 5.5-.8z"/></svg></span>
+          <h3>Novidades toda semana</h3>
+          <p>Coleções sempre renovadas. Siga nas redes e não perca os lançamentos.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" id="contato">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" width="40" height="40"><rect width="100" height="100" rx="26" fill="var(--cream)"/><path d="M16 62c0-5 3-7 8-9l14-6 8-13c2-3 6-3 8 0l4 6-8 6 6 6 7-8c7 4 12 8 20 9 4 .5 6 3 6 7v5H16z" fill="none" stroke="var(--terracotta)" stroke-width="5" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand-text light"><strong>Estação</strong><em>Calçados · Mirassol</em></span>
+        </div>
+        <p>Calçados para todos os estilos, no coração do Centro de Mirassol/SP. Veja o catálogo e feche pelo WhatsApp.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contato</h3>
+        <a class="footer-link" id="wa-footer" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="mini-ico" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          WhatsApp da loja
+        </a>
+        <a class="footer-link" href="https://instagram.com" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="mini-ico" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+          Instagram
+        </a>
+        <a class="footer-link" href="https://facebook.com" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="mini-ico" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          Facebook
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Visite</h3>
+        <p class="footer-text">Rua 9 de Julho, 1923<br/>Centro — Mirassol/SP</p>
+        <p class="footer-text">Seg a sex · 9h–18h<br/>Sábado · 9h–13h</p>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© <span id="year"></span> Estação Calçados · Mirassol. Todos os direitos reservados.</p>
+      <p class="demo-note">Página demonstrativa • imagens ilustrativas e WhatsApp de exemplo</p>
+    </div>
+  </footer>
+
+  <a class="wa-fab" id="wa-fab" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.3 12-11.9C29 8.3 22.6 3 16 3zm0 21.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 9.9S21.9 24.7 16 24.7z"/><path d="M22 18.3c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>

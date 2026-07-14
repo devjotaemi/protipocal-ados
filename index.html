@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demonstrações — Landing pages com catálogo + WhatsApp</title>
+  <meta name="description" content="Duas landing pages de demonstração: JNV Imobiliária (Monte Aprazível/SP) e Estação Calçados (Mirassol/SP)." />
+  <meta name="theme-color" content="#11151c" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2311151c'/%3E%3Ccircle cx='36' cy='50' r='16' fill='%230E2A47' stroke='%23C7A24B' stroke-width='4'/%3E%3Ccircle cx='64' cy='50' r='16' fill='%23B5623C'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0}
+    :root{--bg:#0d1117;--bg2:#141b24;--fg:#eef1f5;--muted:#9aa7b4;--line:rgba(255,255,255,.1);--ease:cubic-bezier(.32,.72,0,1)}
+    html{-webkit-text-size-adjust:100%}
+    body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:
+      radial-gradient(70% 50% at 20% 0%,rgba(199,162,75,.10),transparent 55%),
+      radial-gradient(70% 50% at 90% 20%,rgba(181,98,60,.12),transparent 55%),
+      var(--bg);
+      color:var(--fg);line-height:1.6;min-height:100dvh;display:flex;flex-direction:column;
+      -webkit-font-smoothing:antialiased;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:100%;max-width:1080px;margin-inline:auto;padding:clamp(28px,6vw,64px) clamp(20px,5vw,40px)}
+    header.top{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.02em}
+    .logo{display:flex}
+    .logo svg{width:38px;height:38px}
+    .hero{margin-top:clamp(40px,9vw,90px)}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:#d9c48a;border:1px solid var(--line);background:rgba(255,255,255,.04);padding:7px 14px;border-radius:999px}
+    .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:#c7a24b}
+    h1{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.04;letter-spacing:-.01em;margin:20px 0 16px;max-width:16ch}
+    h1 em{font-style:italic;color:#d9b25f}
+    .lede{color:var(--muted);font-size:clamp(1rem,1.6vw,1.18rem);max-width:56ch}
+    .cards{margin-top:clamp(36px,6vw,60px);display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .card{position:relative;display:flex;flex-direction:column;background:var(--bg2);border:1px solid var(--line);border-radius:26px;overflow:hidden;
+      transition:transform .6s var(--ease),box-shadow .6s var(--ease),border-color .4s var(--ease);box-shadow:0 30px 60px -40px rgba(0,0,0,.8)}
+    .card:hover{transform:translateY(-6px);border-color:rgba(255,255,255,.2);box-shadow:0 50px 90px -50px rgba(0,0,0,.9)}
+    .card:focus-visible{outline:2.5px solid #d9b25f;outline-offset:3px}
+    .thumb{position:relative;aspect-ratio:16/10;overflow:hidden}
+    .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+    .card:hover .thumb img{transform:scale(1.06)}
+    .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(13,17,23,.85))}
+    .tag{position:absolute;top:14px;left:14px;z-index:2;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px;color:#fff;backdrop-filter:blur(4px)}
+    .tag.jnv{background:rgba(14,42,71,.85);border:1px solid rgba(199,162,75,.5)}
+    .tag.est{background:rgba(181,98,60,.85)}
+    .card-body{padding:22px;display:flex;flex-direction:column;gap:8px;flex:1}
+    .card h2{font-family:"Fraunces",serif;font-weight:600;font-size:1.6rem}
+    .card .loc{color:var(--muted);font-size:.9rem;display:flex;align-items:center;gap:6px}
+    .card .desc{color:var(--muted);font-size:.95rem;margin-top:2px}
+    .go{margin-top:auto;padding-top:16px;display:inline-flex;align-items:center;gap:10px;font-weight:700;color:#fff}
+    .go .circ{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;transition:transform .5s var(--ease),background .3s}
+    .card:hover .go .circ{transform:translateX(3px);background:rgba(255,255,255,.2)}
+    .go .circ svg{width:18px;height:18px}
+    .accent-jnv{color:#d9b25f}.accent-est{color:#e0956e}
+    footer{margin-top:auto;color:var(--muted);font-size:.85rem}
+    .foot-in{border-top:1px solid var(--line);padding-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between}
+    @media(max-width:720px){.cards{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="wrap" style="flex:1;display:flex;flex-direction:column">
+    <header class="top">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><rect width="100" height="100" rx="24" fill="#141b24"/><circle cx="36" cy="50" r="16" fill="#0E2A47" stroke="#C7A24B" stroke-width="4"/><circle cx="64" cy="50" r="16" fill="#B5623C"/></svg>
+      </span>
+      <span>Estúdio de Landing Pages</span>
+    </header>
+
+    <section class="hero">
+      <span class="eyebrow">Demonstrações</span>
+      <h1>Do Instagram para um <em>catálogo</em> que vende no WhatsApp</h1>
+      <p class="lede">Dois exemplos de sites mobile-first: busca e filtros para o visitante, e um toque para falar direto no WhatsApp com a mensagem já preenchida.</p>
+
+      <div class="cards">
+        <a class="card" href="jnv-imobiliaria/index.html" aria-label="Abrir demonstração JNV Imobiliária">
+          <div class="thumb">
+            <span class="tag jnv">Imobiliária</span>
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Casa moderna — JNV Imobiliária" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h2>JNV Imobiliária</h2>
+            <span class="loc">Monte Aprazível / SP</span>
+            <p class="desc">Casas, apartamentos, terrenos e mais — com filtro por operação e tipo, e botão “Tenho interesse”.</p>
+            <span class="go">Ver site <span class="circ accent-jnv"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </div>
+        </a>
+
+        <a class="card" href="estacao-calcados/index.html" aria-label="Abrir demonstração Estação Calçados">
+          <div class="thumb">
+            <span class="tag est">Calçados</span>
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80" alt="Tênis premium — Estação Calçados" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h2>Estação Calçados</h2>
+            <span class="loc">Centro de Mirassol / SP</span>
+            <p class="desc">Catálogo visual por categoria, com preços, numeração e “Comprar” pelo WhatsApp.</p>
+            <span class="go">Ver site <span class="circ accent-est"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot-in">
+        <span>Páginas demonstrativas · imagens ilustrativas de banco de imagens.</span>
+        <span>Mobile-first · WhatsApp · sem back-end.</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
